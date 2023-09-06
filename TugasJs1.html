@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Biodata</h1>
+        <p><strong>Nama:</strong> <span id="nama">Try Wahyudi Saputra</span></p>
+        <p><strong>Nomor HP:</strong> <span id="nomor_hp">089602255585</span></p>
+        <p><strong>Alamat:</strong> <span id="alamat">Perum Top Jln Mawar III Blok D4 No.9, Jakabaring</span></p>
+        <p><strong>Jenis Kelamin:</strong> <span id="jenis_kelamin">Laki-laki</span></p>
+        <p><strong>Umur:</strong> <span id="umur">22 tahun</span></p>
+        <p><strong>Keahlian:</strong> <span id="keahlian">Web Development</span></p>
+        <p><strong>Email:</strong> <span id="email">trywahyudi199@gmail.com</span></p>
+    </div>
+
+    <script>
+        // Data biodata
+        const biodata = {
+            nama: "Try Wahyudi Saputra",
+            nomor_hp: "089602255585",
+            alamat: "Perum Top Jln Mawar III Blok D4 No.9, Jakabaring",
+            jenis_kelamin: "Laki-laki",
+            umur: "22 tahun",
+            keahlian: "Web Development",
+            email: "trywahyudi199@gmail.com"
+        };
+
+        // Mengisi data ke dalam elemen-elemen HTML
+        document.getElementById("nama").textContent = biodata.nama;
+        document.getElementById("nomor_hp").textContent = biodata.nomor_hp;
+        document.getElementById("alamat").textContent = biodata.alamat;
+        document.getElementById("jenis_kelamin").textContent = biodata.jenis_kelamin;
+        document.getElementById("umur").textContent = biodata.umur;
+        document.getElementById("keahlian").textContent = biodata.keahlian;
+        document.getElementById("email").textContent = biodata.email;
+    </script>
+</body>
+</html>
